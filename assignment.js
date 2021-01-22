@@ -8,9 +8,9 @@ function kilometerToMeter(km){
     if(typeof(km) != "number"){
         return "invalid input! You have inserted a "+typeof(km)+". Please input a valid number";
     }
-    //check negetive number
+    //check negative number
     if (Math.sign(km) == -1){
-        return "kilometer can not be negetive. Please inserte a positive number"
+        return "kilometer can not be negative. Please inserte a positive number"
     }
     var result = km*1000;
     return result;
@@ -31,13 +31,13 @@ function budgetCalculator(watch, phone, laptop) {
     }
     //check the input numbers are integer and positive
     if (Math.floor(watch) != watch || Math.sign(watch) == -1) {
-        return "You can not buy fraction or negetive numbers of watch. please input an integer and positive number";
+        return "You can not buy fraction or negative numbers of watch. please input an integer and positive number";
     }
     if (Math.floor(phone) != phone || Math.sign(phone) == -1) {
-        return "You can not buy fraction or negetive numbers of phone. please input an integer and positive number";
+        return "You can not buy fraction or negative numbers of phone. please input an integer and positive number";
     }
     if (Math.floor(laptop) != laptop || Math.sign(laptop) == -1) {
-        return "You can not buy fraction or negetive numbers of laptop. please input an integer and positive number";
+        return "You can not buy fraction or negative numbers of laptop. please input an integer and positive number";
     }
     //defining single product price
     var watchPrice = 50;
@@ -63,7 +63,7 @@ function hotelCost(days) {
         return "please insert a valid number";
     }
     if(Math.sign(days) == -1){
-        return "Days can not be negetive. please insert a positive number";
+        return "Days can not be negative. please insert a positive number";
     }
 
     var totalHotelCost = 0;
